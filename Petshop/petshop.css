@@ -1,0 +1,224 @@
+:root{
+ --color-primary: #007bff;
+ --color-links: #FFA500;
+ --color-section: #f5f5f5;
+ --color-text: #333333;
+ --color-details: #AEEEEE;
+ --color-destaques: #98FF98;
+ --border-radius: 20px 0 20px 0px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(https://img.freepik.com/vetores-gratis/impressoes-de-patas-fundo-com-decoracao-de-coracoes_18591-84208.jpg?t=st=1721969622~exp=1721973222~hmac=a60de9c872c3b2fd4882a638f1881ce571ae718d494d7a0cf5678246e2b72c0e&w=740);
+    color: var(--color-text);
+}
+
+header{
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    background-position: right top;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h1{
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 0.5em;
+}
+
+nav{
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 0.8em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    outline: solid 1px;
+    background-color: #f5f5f549;
+    border-radius: var(--border-radius);
+    padding: 0.8em;
+}
+
+nav ul li a:hover{
+    background-color: var(--color-links);
+    padding: 0.8em;
+    transition: 0.3s;
+    border-radius: 20px 0 20px 0px;
+    color: white;
+    outline: #FFA500;
+}
+
+main{
+    margin-top: 6em;
+}
+
+main h1{
+    text-align: center;
+    padding: 1.5em 1.5em 0 1.5em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+main p{
+    text-align: center;
+    margin-top: 0;
+    padding: 0.2em 1.5em 1.5em 1.5em;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: solid; */
+    background-color: #F5F5F5;
+    border-radius: var(--border-radius);
+    margin: 1.5em;
+    padding: 1.5em;
+}
+
+section article{
+    box-shadow: 1px 1px 10px var(--color-text);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 1em;
+}
+
+.article_home:hover{
+    scale: 1.15;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+section article img{
+    border-radius: var(--border-radius);
+    width: 95%;
+    margin-top: 1em;
+}
+
+section article h3{
+    margin: 1.5em 0 0 0;
+}
+
+section article p{
+    margin: 0.1em 0 0 0;
+}
+
+footer{
+    background-color: var(--color-destaques);
+    border-radius: var(--border-radius);
+    padding: 2.0em;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.section_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_perfil h2{
+    text-transform: uppercase;
+}
+
+.section_perfil article{
+    padding: 2em;
+    text-align: center;
+}
+
+.section_perfil p{
+    border: solid;
+}
+
+.section_perfil a{
+    background-color: var(--color-links);
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    width: 95%;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-top: 3em;
+}
+
+.section_perfil a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-text);
+    outline: 2px solid var(--color-links);
+    transition: .2s;
+}
+
+.section_curiosidades article{
+    text-align: center;
+    width: 50%;
+}
+
+.section_curiosidades h2{
+    border-bottom: 1px solid var(--color-text);
+    margin: 1em;
+    padding-bottom: 1em;
+}
+
+.section_falabicho{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.section_falabicho p{
+    margin: 0;
+}
+
+.section_falabicho ul{
+    display: flex;
+    padding: 0;
+}
+
+.section_falabicho li{
+    padding: 0.8em;
+    list-style: none;
+}
+
+.section_falabicho a{
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.section_falabicho a:hover{
+    background-color: var(--color-links);
+    border-radius: var(--border-radius);
+    padding: 0.3em 0em;
+    color: var(--color-text);
+    transition: .3s;
+}
